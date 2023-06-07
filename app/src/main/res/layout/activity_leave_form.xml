@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/texth"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".LeaveForm">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="20dp"
+        android:text="Fill Leave Application Form"
+        android:textAlignment="center"
+        android:textColor="@color/blueback"
+        android:textDirection="locale"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextempId"
+        android:layout_width="292dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="75dp"
+        android:ems="10"
+        android:hint="Employee ID"
+        android:inputType="text"
+        android:textColorHint="#000000" />
+
+    <EditText
+        android:id="@+id/editTextempName"
+        android:layout_width="386dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:hint="Employee Name"
+        android:inputType="text"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/editTextempEmail"
+        android:layout_width="386dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black" />
+
+    <TextView
+        android:id="@+id/textViewDepartment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginRight="15dp"
+        android:text="Department:"
+
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+    <Spinner
+        android:id="@+id/spinnerDepartment"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="250dp"
+        android:textAlignment="center"
+        android:entries="@array/departments"
+
+        />
+
+    <EditText
+        android:id="@+id/editTextApplyDate"
+        android:layout_width="386dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginRight="15dp"
+        android:ems="10"
+        android:hint="Apply Date"
+        android:inputType="date"
+        android:textColorHint="@color/black" />
+
+    <TextView
+        android:id="@+id/textViewSelectDateFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginRight="15dp"
+        android:text="From:"
+
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextDateFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="390dp"
+        android:layout_marginLeft="80dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Select Date"
+        android:textColorHint="@color/black"
+
+
+        />
+
+    <TextView
+        android:id="@+id/textViewSelectDateTo"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginRight="15dp"
+        android:text="To:"
+
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextDateTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:layout_marginLeft="80dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Select Date"
+        android:textColorHint="@color/black"
+
+
+        />
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="510dp"
+        android:layout_marginRight="15dp"
+        android:text="Description:"
+
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="15dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="700dp"
+        android:backgroundTint="@color/blueback"
+        android:fontFamily="sans-serif-black"
+        android:text="Submit"
+        android:textColor="@color/black" />
+
+
+</RelativeLayout>
