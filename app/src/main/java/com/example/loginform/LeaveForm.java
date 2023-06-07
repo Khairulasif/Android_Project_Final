@@ -63,6 +63,25 @@ public class LeaveForm extends AppCompatActivity {
         final int month = calendar.get(Calendar.MONTH);
         final int day = calendar.get(Calendar.DAY_OF_MONTH);
 
+
+
+
+        leaveApplyDate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DatePickerDialog dialog = new DatePickerDialog(LeaveForm.this, new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+
+                        month = month+1;
+                        String date = dayOfMonth +"/" + month + "/" + year;
+                        leaveApplyDate.setText(date);
+                    }
+                },year, month, day);
+                dialog.show();
+            }
+        });
+
 //        textViewSelectDateFrom.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
@@ -158,14 +177,14 @@ public class LeaveForm extends AppCompatActivity {
 
 
 
-                Toast.makeText(getApplicationContext(),"ID" + empIdGet +
-                        "Name" + empNameGet +
-                        "Email" + empEmailGet +
-                        "Department" + empDepartGet +
-                        "Apply" + empApplyDateGet +
-                        "From" + fromDateGet +
-                        "To" + toDateGet +
-                        "Description" + leaveDescrip, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(),"ID" + empIdGet +
+//                        "Name" + empNameGet +
+//                        "Email" + empEmailGet +
+//                        "Department" + empDepartGet +
+//                        "Apply" + empApplyDateGet +
+//                        "From" + fromDateGet +
+//                        "To" + toDateGet +
+//                        "Description" + leaveDescrip, Toast.LENGTH_SHORT).show();
             }
         });
 

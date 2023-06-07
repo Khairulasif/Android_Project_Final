@@ -171,7 +171,7 @@ public class  Database extends SQLiteOpenHelper {
 
     public boolean deleteEmployee(int id) {
         SQLiteDatabase db = this.getWritableDatabase();
-        int rowCount = db.delete("LEAVE_APPLICATION", "id = ?", new String[]{id + ""});
+        int rowCount = db.delete("LEAVE_APPLICATION", "ID = ?", new String[]{id + ""});
         db.close();
         return rowCount > 0;
     }

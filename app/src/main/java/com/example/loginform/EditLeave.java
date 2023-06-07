@@ -66,6 +66,23 @@ public class EditLeave extends AppCompatActivity {
         final int month = calendar.get(Calendar.MONTH);
         final int day = calendar.get(Calendar.DAY_OF_MONTH);
 
+
+        leaveApplyDate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DatePickerDialog dialog = new DatePickerDialog(EditLeave.this, new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+
+                        month = month+1;
+                        String date = dayOfMonth +"/" + month + "/" + year;
+                        leaveApplyDate.setText(date);
+                    }
+                },year, month, day);
+                dialog.show();
+            }
+        });
+
         editTextDateFrom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -89,22 +89,22 @@ public class LeaveList extends AppCompatActivity {
                     }
                 });
 
-//                delBtn.setOnClickListener(new View.OnClickListener() {
-//                    @Override
-//                    public void onClick(View view) {
-//                        HashMap<String, String> user = new HashMap<>();
-//
-//                        user = (HashMap<String, String>) leaveList.get(position);
-//
-//                        boolean deleted = db.deleteEmployee(Integer.parseInt(Objects.requireNonNull(user.get("ID"))));
-//                        if (deleted) {
-//                            leaveList.remove(position);
-//                            notifyDataSetChanged();
-//                        }
-//                        String message = deleted ? "Successfully deleted" : "Failed to delete";
-//                        Toast.makeText(LeaveList.this, message, Toast.LENGTH_SHORT).show();
-//                    }
-//                });
+                delBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        HashMap<String, String> user = new HashMap<>();
+
+                        user = (HashMap<String, String>) leaveList.get(position);
+
+                        boolean deleted = db.deleteEmployee(Integer.parseInt(Objects.requireNonNull(user.get("ID"))));
+                        if (deleted) {
+                            leaveList.remove(position);
+                            notifyDataSetChanged();
+                        }
+                        String message = deleted ? "Successfully deleted" : "Failed to delete";
+                        Toast.makeText(LeaveList.this, message, Toast.LENGTH_SHORT).show();
+                    }
+                });
 
 
                 return v;
