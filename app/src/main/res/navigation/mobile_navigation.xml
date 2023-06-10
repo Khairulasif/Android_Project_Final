@@ -18,8 +18,16 @@
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
-        android:id="@+id/nav_loan"
-        android:name="com.example.loginform.drawer.ui.loan.LoanFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_loan" />
+        android:id="@+id/nav_leave"
+        android:name="com.example.loginform.drawer.ui.leaveForm.LeaveForm"
+        android:label="Leave Application"
+        tools:layout="@layout/fragment_leave_form" />
+
+    <activity
+        android:id="@+id/nav_leave_activity"
+        android:name="com.example.loginform.LeaveForm"
+        android:label="Leave Application Activity"
+        tools:layout="@layout/activity_leave_form" />
+
+
 </navigation>
