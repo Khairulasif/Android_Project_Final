@@ -77,7 +77,7 @@ public class Login extends AppCompatActivity {
 //                    }
 //                }
 
-                startActivity(new Intent(Login.this, Home2.class));
+                startActivity(new Intent(Login.this, DrawerActivity.class));
 
             }
         });
