@@ -16,6 +16,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".LoanForm"
+            android:exported="false" />
+        <activity
             android:name=".EditLeave"
             android:exported="false" />
         <activity

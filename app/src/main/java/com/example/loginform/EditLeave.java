@@ -21,7 +21,7 @@ import com.example.loginform.entity.LeaveEntity;
 
 import java.util.Calendar;
 
-public class EditLeave extends AppCompatActivity {
+public class  EditLeave extends AppCompatActivity {
 
 
     private EditText leaveId;
