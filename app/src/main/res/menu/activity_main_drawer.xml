@@ -13,12 +13,22 @@
 
         <item
             android:id="@+id/nav_leave_activity"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/leave_image"
             android:title="Leave Application" />
 
         <item
             android:id="@+id/nav_loan_activity"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/loan"
             android:title="Loan Application" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/waving_hand"
+            android:title="About" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/baseline_logout"
+            android:title="Logout" />
     </group>
 </menu>

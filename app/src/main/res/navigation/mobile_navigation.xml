@@ -31,5 +31,11 @@
         android:label="Loan Application"
         tools:layout="@layout/activity_loan_form" />
 
+    <activity
+        android:id="@+id/nav_logout"
+        android:name="com.example.loginform.Login"
+        android:label=""
+        tools:layout="@layout/activity_login" />
+
 
 </navigation>
