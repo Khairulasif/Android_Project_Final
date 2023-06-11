@@ -1,9 +1,13 @@
 package com.example.loginform.drawer;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
 
+import com.example.loginform.LeaveForm;
+import com.example.loginform.LeaveList;
+import com.example.loginform.MailActivity;
 import com.example.loginform.R;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
@@ -33,8 +37,10 @@ public class DrawerActivity extends AppCompatActivity {
         binding.appBarDrawer.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+
+                startActivity(new Intent(DrawerActivity.this, MailActivity.class));
             }
         });
         DrawerLayout drawer = binding.drawerLayout;

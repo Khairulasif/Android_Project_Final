@@ -31,11 +31,11 @@ public class LeaveForm extends AppCompatActivity {
 
     Button btnSubmit;
 
-    private TextView textViewSelectDateFrom;
-    private TextView editTextDateFrom;
+//    private TextView textViewSelectDateFrom;
+    private EditText editTextDateFrom;
 
-    private TextView textViewSelectDateTo;
-    private TextView editTextDateTo;
+//    private TextView textViewSelectDateTo;
+    private EditText editTextDateTo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

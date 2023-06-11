@@ -51,6 +51,20 @@ public class  Database extends SQLiteOpenHelper {
 
         db.execSQL(leaveApplicationSave);
 
+        String loanApplicationSave = "CREATE TABLE LOAN_APPLICATION (ID INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                "EMP_ID INTEGER, " +
+                "EMP_NAME TEXT, " +
+
+
+                "EMP_DEPARTMENT TEXT,"+
+                "APPLY_DATE TEXT," +
+                "AMOUNT TEXT, " +
+                "INSTALLMENT TEXT, " +
+                "LOAN_DESCRIPTION TEXT )";
+
+
+        db.execSQL(loanApplicationSave);
+
     }
 
 
@@ -71,6 +85,28 @@ public class  Database extends SQLiteOpenHelper {
 
 
         db.insert("LEAVE_APPLICATION", null, values);
+
+        db.close();
+
+    }
+
+    public void addLoanApplication(Integer emp_id, String emp_name, String emp_department, String apply_date, Integer amount, Integer installment, String description) {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+
+        values.put("EMP_ID", emp_id);
+        values.put("EMP_NAME", emp_name);
+
+        values.put("EMP_DEPARTMENT", emp_department);
+        values.put("APPLY_DATE", apply_date);
+        values.put("AMOUNT", amount);
+        values.put("INSTALLMENT", installment);
+        values.put("LOAN_DESCRIPTION", description);
+
+
+        db.insert("LOAN_APPLICATION", null, values);
 
         db.close();
 
