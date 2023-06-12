@@ -37,5 +37,11 @@
         android:label=""
         tools:layout="@layout/activity_login" />
 
+    <activity
+        android:id="@+id/nav_about"
+        android:name="com.example.loginform.AboutActivity"
+        android:label="About"
+        tools:layout="@layout/activity_about" />
+
 
 </navigation>

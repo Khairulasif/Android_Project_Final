@@ -14,9 +14,6 @@
     <string name="menu_loan">Loan</string>
 
 
-
-
-
     <array name="departments">
         <item>Technical</item>
         <item>Support</item>
